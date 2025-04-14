@@ -5,7 +5,12 @@
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/user_hib</property>
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/user_hib?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true
+        </property>
+
+
+
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">imgbas01</property>
 
