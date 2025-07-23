@@ -10,6 +10,12 @@ import org.hibernate.service.ServiceRegistry;
 public class Util {
     private static SessionFactory sessionFactory;
 
+    private static Util instance;
+
+    private Util(){
+
+    }
+
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
